@@ -8,10 +8,10 @@ Created on Sat Jun 20 13:04:32 2020
 import random
 
 def main():
-    #seijo_10x10()
+    seijo_10x10()
     #seitate_10x10()
     #metal_10x10()
-    densetsu_10x10()
+    #densetsu_10x10()
     
 def seijo_10x10():
     item = ["聖女のこん","聖女のティアラ","聖女のころも上","聖女のころも下","☆☆5☆☆","☆4","ゴミ"]
