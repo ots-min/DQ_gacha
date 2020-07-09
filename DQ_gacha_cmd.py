@@ -18,6 +18,7 @@ def main():
         print("-seitate 聖盾騎士装備")
         print("-seijo 聖女装備")
         print("-kuroarashi 黒嵐装備")
+        print("-mizugi あぶない水着装備")
     elif(args[1]) == "-densetsu":
         densetsu_10x10()
     elif(args[1]) == "-metal":
@@ -28,7 +29,17 @@ def main():
         seijo_10x10()
     elif(args[1]) == "-kuroarashi":
         kuroarashi_10x10()
+    elif(args[1]) == "-mizugi":
+        mizugi_10x10()
 
+def mizugi_10x10():
+    item = ["オーシャンウィップ","あぶない髪飾り","あぶない水着上","あぶない水着下","☆☆5☆☆","☆4","ゴミ"]
+    odds1 = [0.5, 0.5, 0.5, 0.5, 5.0, 23.0, 70.0]
+    odds2 = [7.14285, 7.14285, 7.14285, 7.14285, 71.4286, 0, 0]
+    odds3 = [25.0, 25.0, 25.0, 25.0, 0, 0, 0]
+    
+    gacha10x10(item,odds1,odds2,odds3)
+    
 def kuroarashi_10x10():
     item = ["黒嵐のツメ","黒嵐のフード","黒嵐のローブ上","黒嵐のローブ下","☆☆5☆☆","☆4","ゴミ"]
     odds1 = [0.5, 0.5, 0.5, 0.5, 5.0, 23.0, 70.0]
