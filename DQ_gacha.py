@@ -7,6 +7,7 @@ Created on Sat Jun 20 13:04:32 2020
 
 import random
 import tkinter
+from tkinter import ttk
 from tkinter import messagebox
 
 def main():
@@ -15,10 +16,10 @@ def main():
     w = tkinter.Tk()
     w.title("DQWガチャシミュレータ")
 
-    f = tkinter.ttk.Frame(w, padding=10) 
+    f = ttk.Frame(w, padding=10) 
     f.pack()
     
-    combo = tkinter.ttk.Combobox(f, state="readonly")
+    combo = ttk.Combobox(f, state="readonly")
     combo["value"] = ("伝説の勇者装備",
                      "メタスラ装備",
                      "聖盾騎士装備",
@@ -31,7 +32,7 @@ def main():
     combo.current(8)
     combo.grid(row=0, column=0, sticky=tkinter.W)
     
-    b_start = tkinter.ttk.Button(f,text="ガチャ開始",command=gacha_start,)
+    b_start = ttk.Button(f,text="ガチャ開始",command=gacha_start,)
     b_start.grid(row=0, column=1, sticky=tkinter.W)
 
     txt = tkinter.Text(f, height=20, width=80)
